@@ -2,7 +2,7 @@ import pictures.Empty;
 
 import javax.swing.*;
 
-public class ImageList {
+public class ImageList { // This class is to create the pictures and the picture array to get them for the buttons
     private static ImageIcon pic1 = new ImageIcon(Empty.class.getResource("pic1.png"));
     private static ImageIcon pic2 = new ImageIcon(Empty.class.getResource("pic2.png"));
     private static ImageIcon pic3 = new ImageIcon(Empty.class.getResource("pic3.png"));
