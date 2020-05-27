@@ -5,8 +5,11 @@ import javax.swing.*;
 import java.awt.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
+    /*
+	 * These are the components to make the frame of the game
+	 */
 
-public class GWFrame extends JFrame { // These are the components to make the frame of the game
+public class GWFrame extends JFrame {
     
     private gameButtons[][] buttons = new gameButtons[3][5];
     private ImageList images = new ImageList();
@@ -17,8 +20,10 @@ public class GWFrame extends JFrame { // These are the components to make the fr
     private JLabel label4Ans = new JLabel();
     private gameButtons[][] quesButt = new gameButtons[4][2];
 
-
-    public GWFrame() // This is the constructor for the game
+    /*
+	 * This is the constructor for the game
+	 */
+    public GWFrame() 
     {
         
         super("Guess Who?");
@@ -45,8 +50,13 @@ public class GWFrame extends JFrame { // These are the components to make the fr
 
     }
 
+    /*
+	 * This method is to create the buttons for the game. 
+     * The bottons will have the pictures of the possible people.
+	 */
+    
     private void createButtons()
-    { // This method is to create the buttons for the game. The bottons will have the pictures of the possible people.
+    { 
         int cnt = 0;
         for(int r = 0; r < buttons.length; r++)
         {
@@ -76,9 +86,13 @@ public class GWFrame extends JFrame { // These are the components to make the fr
 
         }
     }
+    
+    /*
+	 * This method will create the Buttons for the questions to change and ask the question
+	 */
 
     private void createQuesButt()
-    { // This method will create the Buttons for the questions to change and ask the question
+    {
         for(int r = 0; r < quesButt.length; r++)
         {
             for(int c = 0; c < quesButt[r].length; c++)
