@@ -5,7 +5,7 @@ import javax.swing.*;
 import java.awt.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
-    /*
+   	/*
 	 * These are the components to make the frame of the game
 	 */
 
@@ -20,7 +20,7 @@ public class GWFrame extends JFrame {
     private JLabel label4Ans = new JLabel();
     private gameButtons[][] quesButt = new gameButtons[4][2];
 
-    /*
+   	/*
 	 * This is the constructor for the game
 	 */
     public GWFrame() 
@@ -50,9 +50,9 @@ public class GWFrame extends JFrame {
 
     }
 
-    /*
+    	/*
 	 * This method is to create the buttons for the game. 
-     * The bottons will have the pictures of the possible people.
+	 * The bottons will have the pictures of the possible people.
 	 */
     
     private void createButtons()
@@ -87,7 +87,7 @@ public class GWFrame extends JFrame {
         }
     }
     
-    /*
+    	/*
 	 * This method will create the Buttons for the questions to change and ask the question
 	 */
 
